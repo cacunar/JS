@@ -20,11 +20,13 @@ function decreaseAmount() {
         cantidad.innerHTML = number
         totalAmount()
     }
+    else {
+        console.error ("ERROR: No se aceptan numeros negativos")
+    }
 }
 
 function totalAmount() {
     total = document.querySelector(".valor-total")
-    console.log(number)
     valor = (precio * number)
     total.innerHTML = valor
 }
