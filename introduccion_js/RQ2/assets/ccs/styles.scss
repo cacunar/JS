@@ -1,0 +1,35 @@
+body {
+    p {
+        text-align: center;
+    }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    .stickers-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+
+      img {
+        max-width: 200px;
+        min-height: 150px;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    #result {
+        margin-top: 10px;
+      }
+  }
+}
+

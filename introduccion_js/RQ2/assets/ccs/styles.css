@@ -1,0 +1,29 @@
+body p {
+  text-align: center;
+}
+body .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+body .container .stickers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body .container .stickers-container img {
+  max-width: 200px;
+  min-height: 150px;
+}
+body .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .bottom #result {
+  margin-top: 10px;
+}/*# sourceMappingURL=styles.css.map */

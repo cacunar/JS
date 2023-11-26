@@ -1,0 +1,14 @@
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 300px;
+}
+body .container img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+body .redBox {
+  border: red 2px solid;
+}/*# sourceMappingURL=styles.css.map */

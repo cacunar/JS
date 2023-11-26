@@ -1,0 +1,24 @@
+body h1 {
+  text-align: center;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+body .container .password-select {
+  margin-bottom: 10px;
+  background: lightgray;
+}
+body .bottom {
+  flex-direction: column;
+}
+body .bottom #result {
+  margin-top: 10px;
+}
+body .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */

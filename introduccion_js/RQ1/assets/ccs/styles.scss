@@ -1,0 +1,23 @@
+
+body {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 300px;
+
+
+
+        img {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            
+        }
+    }
+
+    .redBox {
+        border: red 2px solid
+    }
+}
+
