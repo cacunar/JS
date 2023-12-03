@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+</head>
+<body>
+
+  <div id="azul" style="width: 200px; height: 200px; background-color: blue;"></div>
+  <div id="rojo" style="width: 200px; height: 200px; background-color: red;"></div>
+  <div id="verde" style="width: 200px; height: 200px; background-color: green;"></div>
+  <div id="amarillo" style="width: 200px; height: 200px; background-color: yellow;"></div>
+
+  <div id="key" style="width: 200px; height: 200px; background-color: white; border: 1px solid black;"></div>
+
+  <script>
+    const divAzul = document.getElementById("azul");
+    const divRojo = document.getElementById("rojo");
+    const divVerde = document.getElementById("verde");
+    const divAmarillo = document.getElementById("amarillo");
+    const divKey = document.getElementById("key");
+
+    function cambiarColorNegro() {
+        this.style.backgroundColor = "black";
+    }
+
+    divAzul.addEventListener("click", cambiarColorNegro);
+    divRojo.addEventListener("click", cambiarColorNegro);
+    divVerde.addEventListener("click", cambiarColorNegro);
+    divAmarillo.addEventListener("click", cambiarColorNegro);
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'a') {
+        divKey.style.backgroundColor = 'pink';
+      } else if (event.key === 's') {
+        divKey.style.backgroundColor = 'orange';
+      } else if (event.key === 'd') {
+        divKey.style.backgroundColor = 'lightblue';
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'q') {
+        crearNuevoDiv('purple');
+      } else if (event.key === 'w') {
+        crearNuevoDiv('gray');
+      } else if (event.key === 'e') {
+        crearNuevoDiv('brown');
+      }
+    });
+
+    function crearNuevoDiv(color) {
+      const nuevoDiv = document.createElement('div');
+      nuevoDiv.style.width = '200px';
+      nuevoDiv.style.height = '200px';
+      nuevoDiv.style.backgroundColor = color;
+      nuevoDiv.style.border = '1px solid black';
+      document.body.appendChild(nuevoDiv);
+    }
+  </script>
+
+</body>
+</html>
