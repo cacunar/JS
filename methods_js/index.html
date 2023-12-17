@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/ccs/styles.css">
+    <title>TO DO list</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <hr>
+    <p>Nueva tarea</p>
+    <form class="input-form" id="frm1" method="post">
+        <input type="text" id="task" class="task" name="task" value="" size="100">
+        <input type="submit" class="submit" value="Agregar">
+    </form>
+    <div class="parent-container">
+        <div class="child-container">
+            <p id="total">Total:</p>
+            <p id="done">Realizadas:</p>
+        </div>
+        <div class="child-container-2">
+            <table>
+                <thead>
+                  <tr>
+                    <th class="id">ID</th>
+                    <th class="taskHead">Tarea</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+        <!-- Font awesome -->
+        <script
+        src="https://kit.fontawesome.com/f5bdbb41e0.js"
+        crossorigin="anonymous"
+      ></script>
+</body>
+</html>
